@@ -16,7 +16,8 @@
 		"assert"
 	],
 	"scripts": {
-		"compile": "tsc --build"
+		"compile": "tsc --build",
+		"lint": "eslint --max-warnings 0 ."
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "6.14.0",
