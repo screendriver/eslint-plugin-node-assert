@@ -1,0 +1,19 @@
+{
+	"extends": ["config:base", ":disableDependencyDashboard"],
+	"labels": ["renovate"],
+	"lockFileMaintenance": {
+		"enabled": true,
+		"automerge": true
+	},
+	"nvm": {
+		"enabled": false
+	},
+	"packageRules": [
+		{
+			"depTypeList": ["dependencies", "devDependencies"],
+			"updateTypes": ["minor", "patch"],
+			"automerge": true,
+			"automergeType": "branch"
+		}
+	]
+}
