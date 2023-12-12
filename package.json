@@ -9,6 +9,7 @@
 	"files": [],
 	"author": "Christian Rackerseder <github@echooff.de>",
 	"license": "ISC",
+	"type": "module",
 	"keywords": [
 		"eslint",
 		"eslintplugin",
