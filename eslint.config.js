@@ -1,33 +1,39 @@
-const typeScriptPlugin = require("@typescript-eslint/eslint-plugin");
-const typeScriptParser = require("@typescript-eslint/parser");
-const eslintConfigPrettier = require("eslint-config-prettier");
-const prettierPlugin = require("eslint-plugin-prettier");
+import { baseConfig } from "@enormora/eslint-config-base";
+import { nodeConfig } from "@enormora/eslint-config-node";
+import { avaConfig } from "@enormora/eslint-config-ava";
+import { typescriptConfig } from "@enormora/eslint-config-typescript";
 
-module.exports = [
+export default [
 	{
-		ignores: ["target/**"],
+		ignores: ["target/**"]
 	},
-	eslintConfigPrettier,
 	{
-		plugins: {
-			prettier: prettierPlugin,
-		},
+		...baseConfig,
 		rules: {
-			"prettier/prettier": "error",
-		},
+			...baseConfig.rules,
+			"no-tabs": "off",
+			indent: "off",
+			quotes: ["error", "double"]
+		}
+	},
+	nodeConfig,
+	{
+		...typescriptConfig,
+		files: ["**/*.ts"],
+		rules: {
+			...typescriptConfig.rules,
+			"@typescript-eslint/quotes": ["error", "double"],
+			"@typescript-eslint/indent": ["error", "tab"]
+		}
 	},
 	{
-		files: ["**/*.ts"],
-		plugins: {
-			"@typescript-eslint": typeScriptPlugin,
-		},
-		languageOptions: {
-			parser: typeScriptParser,
-			parserOptions: {
-				project: "./tsconfig.json",
-				EXPERIMENTAL_useProjectService: true,
-			},
-		},
-		rules: [],
+		...avaConfig,
+		files: ["test/**/*.test.ts"]
 	},
+	{
+		files: ["eslint.config.js", "ava.config.js", "prettier.config.js"],
+		rules: {
+			"import/no-default-export": "off"
+		}
+	}
 ];
