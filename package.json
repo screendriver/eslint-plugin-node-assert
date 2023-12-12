@@ -21,6 +21,7 @@
 	},
 	"devDependencies": {
 		"@enormora/eslint-config-base": "0.0.7",
+		"@enormora/eslint-config-node": "0.0.7",
 		"@enormora/eslint-config-typescript": "0.0.7",
 		"eslint": "8.55.0",
 		"prettier": "3.1.1",
