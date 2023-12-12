@@ -2,7 +2,7 @@
 	"extends": "../tsconfig.base.json",
 	"compilerOptions": {
 		"tsBuildInfoFile": "../target/buildcache/source.tsbuildinfo",
-		"outDir": "../target/source",
+		"outDir": "../target/build/source",
 		"rootDir": "."
 	},
 	"include": ["./**/*.ts"]
