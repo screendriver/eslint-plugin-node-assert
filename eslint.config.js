@@ -11,9 +11,9 @@ export default [
 		...baseConfig,
 		rules: {
 			...baseConfig.rules,
-			"no-tabs": "off",
-			indent: "off",
-			quotes: ["error", "double"]
+			"@stylistic/no-tabs": "off",
+			"@stylistic/quotes": ["error", "double"],
+			"@stylistic/indent": ["error", "tab"]
 		}
 	},
 	nodeConfig,
@@ -21,9 +21,7 @@ export default [
 		...typescriptConfig,
 		files: ["**/*.ts"],
 		rules: {
-			...typescriptConfig.rules,
-			"@typescript-eslint/quotes": ["error", "double"],
-			"@typescript-eslint/indent": ["error", "tab"]
+			...typescriptConfig.rules
 		}
 	},
 	{
