@@ -8,7 +8,7 @@
 	"main": "index.js",
 	"files": [],
 	"author": "Christian Rackerseder <github@echooff.de>",
-	"license": "ISC",
+	"license": "MIT",
 	"type": "module",
 	"keywords": [
 		"eslint",
