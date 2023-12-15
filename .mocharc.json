@@ -1,4 +1,5 @@
 {
+	"require": "./test/mocha-global-setup.js",
 	"spec": "target/build/test/**/*.test.js",
 	"ui": "tdd",
 	"reporter": "dot"
