@@ -1,6 +1,6 @@
 import { baseConfig } from "@enormora/eslint-config-base";
 import { nodeConfig } from "@enormora/eslint-config-node";
-import { avaConfig } from "@enormora/eslint-config-ava";
+import { mochaConfig } from "@enormora/eslint-config-mocha";
 import { typescriptConfig } from "@enormora/eslint-config-typescript";
 
 export default [
@@ -25,7 +25,7 @@ export default [
 		}
 	},
 	{
-		...avaConfig,
+		...mochaConfig,
 		files: ["test/**/*.test.ts"]
 	},
 	{
