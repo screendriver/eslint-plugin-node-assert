@@ -17,6 +17,7 @@
 		"exactOptionalPropertyTypes": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"verbatimModuleSyntax": true
+		"verbatimModuleSyntax": true,
+		"skipLibCheck": true
 	}
 }
