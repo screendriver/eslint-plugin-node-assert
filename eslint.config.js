@@ -29,7 +29,7 @@ export default [
 		files: ["test/**/*.test.ts"]
 	},
 	{
-		files: ["eslint.config.js", "ava.config.js", "prettier.config.js"],
+		files: ["eslint.config.js", "prettier.config.js"],
 		rules: {
 			"import/no-default-export": "off"
 		}
