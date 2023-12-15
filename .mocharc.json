@@ -1,0 +1,5 @@
+{
+	"spec": "target/build/test/**/*.test.js",
+	"ui": "tdd",
+	"reporter": "dot"
+}
