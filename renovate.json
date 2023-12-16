@@ -1,6 +1,6 @@
 {
 	"extends": ["config:base", ":disableDependencyDashboard"],
-	"labels": ["renovate"],
+	"labels": ["renovate", "upgrade"],
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true
