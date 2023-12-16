@@ -1,21 +1,25 @@
 {
 	"name": "eslint-plugin-node-assert",
 	"version": "0.0.1",
+	"type": "module",
 	"description": "ESLint rules for the Node.js 'node:assert' module",
-	"engines": {
-		"node": ">=20.0.0"
-	},
-	"main": "index.js",
-	"files": [],
 	"author": "Christian Rackerseder <github@echooff.de>",
 	"license": "MIT",
-	"type": "module",
+	"exports": "./target/build/source/all-rules.js",
+	"files": [
+		"target/build/source/**/*.js",
+		"LICENSE",
+		"README.md"
+	],
 	"keywords": [
 		"eslint",
 		"eslintplugin",
 		"eslint-plugin",
 		"assert"
 	],
+	"engines": {
+		"node": ">=20.0.0"
+	},
 	"scripts": {
 		"compile": "tsc --build",
 		"lint": "eslint --max-warnings 0 .",
