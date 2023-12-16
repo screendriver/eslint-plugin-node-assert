@@ -29,9 +29,15 @@ export default [
 		files: ["test/**/*.test.ts"]
 	},
 	{
-		files: ["eslint.config.js", "prettier.config.js"],
+		files: ["eslint.config.js", "prettier.config.js", "source/all-rules.ts"],
 		rules: {
 			"import/no-default-export": "off"
+		}
+	},
+	{
+		files: ["source/rules/**/*.ts"],
+		rules: {
+			"new-cap": "off"
 		}
 	}
 ];
