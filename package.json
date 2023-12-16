@@ -28,7 +28,8 @@
 		"compile": "tsc --build",
 		"lint": "eslint --max-warnings 0 .",
 		"pretest:unit": "npm run compile",
-		"test:unit": "mocha --enable-source-maps"
+		"test:unit": "mocha --enable-source-maps",
+		"release": "release-it"
 	},
 	"dependencies": {
 		"@typescript-eslint/utils": "6.14.0"
