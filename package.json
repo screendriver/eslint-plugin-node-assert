@@ -34,7 +34,7 @@
 		"@typescript-eslint/utils": "6.14.0"
 	},
 	"devDependencies": {
-		"@enormora/eslint-config-base": "0.0.9",
+		"@enormora/eslint-config-base": "0.0.10",
 		"@enormora/eslint-config-mocha": "0.0.2",
 		"@enormora/eslint-config-node": "0.0.9",
 		"@enormora/eslint-config-typescript": "0.0.9",
