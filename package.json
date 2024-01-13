@@ -28,7 +28,8 @@
 		"compile": "tsc --build",
 		"lint": "eslint --max-warnings 0 .",
 		"pretest:unit": "npm run compile",
-		"test:unit": "mocha --enable-source-maps"
+		"test:unit": "mocha --enable-source-maps",
+		"release": "release-it"
 	},
 	"dependencies": {
 		"@typescript-eslint/utils": "6.14.0"
@@ -46,6 +47,7 @@
 		"mocha": "10.2.0",
 		"pr-log": "6.0.0",
 		"prettier": "3.2.1",
+		"release-it": "17.0.1",
 		"typescript": "5.3.3"
 	},
 	"peerDependencies": {
