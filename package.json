@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-node-assert",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"description": "ESLint rules for the Node.js 'node:assert' module",
 	"author": "Christian Rackerseder <github@echooff.de>",
