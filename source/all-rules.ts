@@ -1,7 +1,7 @@
-import type { rules } from "@typescript-eslint/eslint-plugin";
+import type { TSESLint } from "@typescript-eslint/utils";
 import { importStrictRule } from "./rules/import-strict.js";
 
-const allRules: typeof rules = {
+const allRules: Record<string, TSESLint.RuleModule<string, unknown[]>> = {
 	"import-strict": importStrictRule
 };
 
