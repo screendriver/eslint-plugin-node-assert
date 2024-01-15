@@ -32,7 +32,7 @@
 		"release": "release-it"
 	},
 	"dependencies": {
-		"@typescript-eslint/utils": "6.18.1"
+		"@typescript-eslint/utils": "6.19.0"
 	},
 	"devDependencies": {
 		"@enormora/eslint-config-base": "0.0.10",
@@ -41,7 +41,7 @@
 		"@enormora/eslint-config-typescript": "0.0.10",
 		"@types/mocha": "10.0.6",
 		"@types/node": "20.11.2",
-		"@typescript-eslint/rule-tester": "6.18.1",
+		"@typescript-eslint/rule-tester": "6.19.0",
 		"eslint": "8.56.0",
 		"eslint-doc-generator": "1.6.2",
 		"mocha": "10.2.0",
