@@ -26,9 +26,13 @@
 	},
 	"scripts": {
 		"compile": "tsc --build",
-		"lint": "eslint --max-warnings 0 .",
+		"lint": "npm-run-all \"lint:*\"",
+		"lint:docs": "markdownlint \"**/*.md\"",
+		"lint:eslint-docs": "npm run update:eslint-docs -- --check",
+		"lint:js": "eslint --max-warnings 0 .",
 		"pretest:unit": "npm run compile",
 		"test:unit": "mocha --enable-source-maps",
+		"update:eslint-docs": "eslint-doc-generator",
 		"release": "release-it"
 	},
 	"dependencies": {
@@ -44,7 +48,9 @@
 		"@typescript-eslint/rule-tester": "6.19.0",
 		"eslint": "8.56.0",
 		"eslint-doc-generator": "1.6.2",
+		"markdownlint-cli": "0.38.0",
 		"mocha": "10.2.0",
+		"npm-run-all": "4.1.5",
 		"pr-log": "6.0.0",
 		"prettier": "3.2.4",
 		"release-it": "17.0.1",

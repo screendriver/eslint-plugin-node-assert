@@ -8,7 +8,7 @@ export const importStrictRule = createRule({
 	name: "import-strict",
 	meta: {
 		docs: {
-			description: "An import from 'node:assert/strict' should always be preferred."
+			description: "Enforce the usage of 'node:assert/strict'"
 		},
 		messages: {
 			"import-strict": "Always import from 'node:assert/strict'"
