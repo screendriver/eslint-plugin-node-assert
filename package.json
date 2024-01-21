@@ -26,9 +26,13 @@
 	},
 	"scripts": {
 		"compile": "tsc --build",
-		"lint": "eslint --max-warnings 0 .",
+		"lint": "npm-run-all \"lint:*\"",
+		"lint:docs": "markdownlint \"**/*.md\"",
+		"lint:eslint-docs": "npm run update:eslint-docs -- --check",
+		"lint:js": "eslint --max-warnings 0 .",
 		"pretest:unit": "npm run compile",
 		"test:unit": "mocha --enable-source-maps",
+		"update:eslint-docs": "eslint-doc-generator",
 		"release": "release-it"
 	},
 	"dependencies": {
