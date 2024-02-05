@@ -39,10 +39,10 @@
 		"@typescript-eslint/utils": "6.20.0"
 	},
 	"devDependencies": {
-		"@enormora/eslint-config-base": "0.0.11",
-		"@enormora/eslint-config-mocha": "0.0.4",
-		"@enormora/eslint-config-node": "0.0.10",
-		"@enormora/eslint-config-typescript": "0.0.11",
+		"@enormora/eslint-config-base": "0.0.12",
+		"@enormora/eslint-config-mocha": "0.0.5",
+		"@enormora/eslint-config-node": "0.0.11",
+		"@enormora/eslint-config-typescript": "0.0.12",
 		"@types/mocha": "10.0.6",
 		"@types/node": "20.11.16",
 		"@typescript-eslint/rule-tester": "6.20.0",
