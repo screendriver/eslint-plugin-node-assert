@@ -51,7 +51,7 @@
 		"markdownlint-cli": "0.39.0",
 		"mocha": "10.3.0",
 		"npm-run-all2": "6.1.2",
-		"pr-log": "6.1.0",
+		"pr-log": "6.1.1",
 		"prettier": "3.2.5",
 		"release-it": "17.1.1",
 		"typescript": "5.3.3"
