@@ -52,7 +52,7 @@
 		"mocha": "11.0.1",
 		"npm-run-all2": "7.0.1",
 		"pr-log": "6.1.1",
-		"prettier": "3.4.1",
+		"prettier": "3.4.2",
 		"release-it": "17.10.0",
 		"typescript": "5.7.2"
 	},
