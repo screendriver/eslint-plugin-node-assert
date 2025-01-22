@@ -47,7 +47,7 @@
 		"@types/node": "22.10.7",
 		"@typescript-eslint/rule-tester": "8.21.0",
 		"eslint": "8.57.1",
-		"eslint-doc-generator": "1.7.1",
+		"eslint-doc-generator": "2.0.2",
 		"markdownlint-cli": "0.43.0",
 		"mocha": "11.1.0",
 		"npm-run-all2": "7.0.2",
