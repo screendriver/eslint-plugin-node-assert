@@ -54,7 +54,7 @@
 		"pr-log": "6.1.1",
 		"prettier": "3.5.3",
 		"release-it": "18.1.2",
-		"typescript": "5.7.3"
+		"typescript": "5.8.2"
 	},
 	"peerDependencies": {
 		"eslint": ">=8.0.0"
