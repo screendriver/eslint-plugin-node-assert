@@ -18,6 +18,6 @@ jobs:
             - name: Install dependencies
               run: npm clean-install
             - name: Run unit tests
-              run: npm run test:unit
+              run: npx just test-unit
             - name: Lint source code
-              run: npm run lint
+              run: npx just lint

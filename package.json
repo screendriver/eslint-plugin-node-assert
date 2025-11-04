@@ -24,25 +24,15 @@
 	"engines": {
 		"node": ">=20.0.0"
 	},
-	"scripts": {
-		"compile": "tsc --build",
-		"lint": "npm-run-all \"lint:*\"",
-		"lint:docs": "markdownlint \"**/*.md\"",
-		"lint:eslint-docs": "npm run update:eslint-docs -- --check",
-		"lint:js": "eslint --max-warnings 0 .",
-		"pretest:unit": "npm run compile",
-		"test:unit": "mocha --enable-source-maps",
-		"update:eslint-docs": "eslint-doc-generator",
-		"release": "release-it"
-	},
+	"scripts": {},
 	"dependencies": {
 		"@typescript-eslint/utils": "8.46.3"
 	},
 	"devDependencies": {
-		"@enormora/eslint-config-base": "0.0.12",
-		"@enormora/eslint-config-mocha": "0.0.5",
-		"@enormora/eslint-config-node": "0.0.11",
-		"@enormora/eslint-config-typescript": "0.0.12",
+		"@enormora/eslint-config-base": "0.0.26",
+		"@enormora/eslint-config-mocha": "0.0.21",
+		"@enormora/eslint-config-node": "0.0.21",
+		"@enormora/eslint-config-typescript": "0.0.30",
 		"@types/mocha": "10.0.10",
 		"@types/node": "24.10.0",
 		"@typescript-eslint/rule-tester": "8.46.3",
@@ -54,6 +44,7 @@
 		"pr-log": "6.1.1",
 		"prettier": "3.6.2",
 		"release-it": "19.0.5",
+		"rust-just": "1.43.0",
 		"typescript": "5.9.3"
 	},
 	"peerDependencies": {
